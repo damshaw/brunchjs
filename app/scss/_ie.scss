@@ -1,0 +1,56 @@
+//ie specific css = supporting ie10+
+
+@media screen and (min-width:0\0) {
+//IE9 and IE10 rule sets go here
+.ij-btn {
+
+	span {
+    padding:12px 16px 12px 16px;
+	}
+}
+
+.product-range {
+  .product-group-title {
+  }
+  .product-tile {
+    margin:1.5em 0 3em 0;
+
+    .tile-wrap{
+      .tile-text
+        h4 {
+          padding:10px 10px 10px 10px;
+        }
+      }
+  }
+}
+
+.bottle-diagram {
+
+  .bottle-image {
+    margin-left:10px; 
+  }
+  .bottle-features {
+
+    .bottle-table {
+      display:block;
+      width:auto;
+      margin-left:80px;
+      top:0;
+      left:0;
+
+      .cell {
+        display:block;
+        margin-left:0;
+        p {
+
+        }
+        .line-wrap {
+          margin-left:0;
+
+        }
+      }
+    }
+  }
+}
+
+}

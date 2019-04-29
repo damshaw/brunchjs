@@ -1,0 +1,51 @@
+//Fonts for IJ17 theme
+@font-face {
+	font-family: 'Brown';
+	src: url('../font/hinted-subset-Brown-Bold.eot');
+	src: local('Brown-Bold'),
+		url('../font/hinted-subset-Brown-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/hinted-subset-Brown-Bold.woff2') format('woff2'),
+		url('../font/hinted-subset-Brown-Bold.woff') format('woff'),
+		url('../font/hinted-subset-Brown-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Brown';
+	src: url('../font/hinted-subset-Brown-Regular.eot');
+	src: local('Brown-Regular'),
+		url('../font/hinted-subset-Brown-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/hinted-subset-Brown-Regular.woff2') format('woff2'),
+		url('../font/hinted-subset-Brown-Regular.woff') format('woff'),
+		url('../font/hinted-subset-Brown-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../font/hinted-subset-SourceSansPro-Regular.eot');
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'),
+		url('../font/hinted-subset-SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/hinted-subset-SourceSansPro-Regular.woff2') format('woff2'),
+		url('../font/hinted-subset-SourceSansPro-Regular.woff') format('woff'),
+		url('../font/hinted-subset-SourceSansPro-Regular.ttf') format('truetype'),
+		url('../font/hinted-subset-SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	src: url('../font/hinted-subset-SourceSansPro-Bold.eot');
+	src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+		url('../font/hinted-subset-SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/hinted-subset-SourceSansPro-Bold.woff2') format('woff2'),
+		url('../font/hinted-subset-SourceSansPro-Bold.woff') format('woff'),
+		url('../font/hinted-subset-SourceSansPro-Bold.ttf') format('truetype'),
+		url('../font/hinted-subset-SourceSansPro-Bold.svg#SourceSansPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}

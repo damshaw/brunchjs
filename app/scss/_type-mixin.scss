@@ -1,0 +1,267 @@
+//Mixins
+$soft-bg: 	#F1F2E9;  //Footer base colour
+$soft-grey-bg: #f8f8f8;
+$soft-green-bg: #F3F6E1;
+$soft-blue-grey-bg: #F0F3F5;
+$manilla-bg: #FFF6E5;
+
+$mid-bg:		#E6EBCC;
+$mid-grey: 	#71767A;
+$black: 		#1D252D;
+$brand1:		#00B74F;
+$brand2:		#B9975B;
+$error:			#e74c3c;
+
+$light-pastel-green: #F3F6E1;
+$mid-pastel-green: #E6EBCC;
+
+
+$brown:     'Brown','Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+$sans:			'Source Sans Pro','Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+
+//General things
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.balance-text {
+  text-wrap: balanced;  /* Apply (proposed) CSS style */
+}
+
+body {
+	font-family:$sans;
+	font-size:16px;
+	color:$black;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: antialiased;
+
+	padding-top: 50px;
+	&.home {
+		//padding-top: 50px;
+	}
+}
+.text-mid-grey{
+	color:lighten($black,30%);
+}
+.top-spacer {
+	margin-top:2em;
+}
+.bottom-spacer {
+	margin-bottom:2.75em;
+}
+
+.no-top-margin {
+	margin-top:0;
+}
+.color-red {
+	color:$error;
+}
+.color-grey {
+	color:$mid-grey;
+}
+.super-light-green-bg {
+	background-color:lighten($soft-green-bg,5%);
+}
+.super-light-grey-bg {
+	background-color:#F3F4F4;
+}
+.relative {
+	position: relative;
+}
+
+@media only screen and (max-width: 768px){
+	.hide-xs {
+		display:none;
+	}
+	.xs-top-spacer {
+		margin-top:2.75em;
+	}
+	.bottom-spacer-xs {
+		margin-bottom:2.5em;
+	}
+}
+@media only screen and (min-width: 768px){
+	body {
+		padding-top: 80px;
+		&.home {
+			//padding-top: 0px;
+		}
+	}
+	.hide-sm {
+		display:none;
+	}
+}
+@media only screen and (min-width: 992px){
+	.hide-md {
+		display:none;
+	}
+	.bottom-spacer-slight-lg {
+		margin-bottom:1.5em;
+	}
+	.top-spacer {
+		margin-top:3em;
+	}
+}
+
+
+p {
+	color:$mid-grey;
+	line-height:1.6em;
+
+	strong {
+		color:$black;
+	}
+}
+
+h1,h2,h3,h4 {
+	font-family:$brown;
+	&.gold {
+		color:$brand2;
+	}
+}
+h1 {
+	font-size:2em;
+}
+h2 {
+	font-size:1.75em;
+	line-height:140%;
+}
+h3 {
+	font-size:1.375em;
+}
+h4 {
+	font-size:1em;
+	span {
+		color:lighten($mid-grey,15%);
+	}
+}
+h4.pre-heading {
+
+
+}
+.page-heading {
+	margin-top:32px;
+	margin-bottom:20px;
+}
+.sub-heading {
+	margin-top:16px;
+}
+@media only screen and (min-width: 768px){
+	h1 {
+		font-size:2.25em;
+	}
+	h2 {
+		font-size:2em;
+	}
+	h3 {
+		font-size:1.5em;
+	}
+	h4 {
+		font-size:1em;
+	}
+	.page-heading {
+		margin-top:72px;
+	}
+}
+@media only screen and (min-width: 992px){
+	h1 {
+		font-size:2.75em;
+	}
+	h2 {
+		font-size:2.25em;
+	}
+	h3 {
+		font-size:1.75em;
+	}
+	h4 {
+		font-size:1.25em;
+	}
+	p,.entry-content ul,.entry-content ol {
+		font-size: 1.125em;
+	}
+}
+
+
+@font-face {
+  font-family: 'juice-font';
+  src: url('../font/juice-font.eot?59917668');
+  src: url('../font/juice-font.eot?59917668#iefix') format('embedded-opentype'),
+       url('../font/juice-font.woff2?59917668') format('woff2'),
+       url('../font/juice-font.woff?59917668') format('woff'),
+       url('../font/juice-font.ttf?59917668') format('truetype'),
+       url('../font/juice-font.svg?59917668#juice-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'juice-font';
+    src: url('../font/juice-font.svg?65843638#juice-font') format('svg');
+  }
+}
+*/
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+ font-family: "juice-font";
+ font-style: normal;
+ font-weight: normal;
+ speak: none;
+
+ display: inline-block;
+ text-decoration: inherit;
+ width: 1em;
+ margin-right: .2em;
+ text-align: center;
+ /* opacity: .8; */
+
+ /* For safety - reset parent styles, that can break glyph codes*/
+ font-variant: normal;
+ text-transform: none;
+
+ /* fix buttons height, for twitter bootstrap */
+ line-height: 1em;
+
+ /* Animation center compensation - margins should be symmetric */
+ /* remove if not needed */
+ margin-left: .2em;
+
+ /* you can be more comfortable with increased icons size */
+ /* font-size: 120%; */
+
+ /* Font smoothing. That was taken from TWBS */
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+
+ /* Uncomment for 3D effect */
+ /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-pencil:before { content: '\e800'; } /* '' */
+.icon-newspaper:before { content: '\e801'; } /* '' */
+.icon-heart:before { content: '\e802'; } /* '' */
+.icon-thumbs-up:before { content: '\e803'; } /* '' */
+.icon-location:before { content: '\e804'; } /* '' */
+.icon-play-circled:before { content: '\e805'; } /* '' */
+.icon-search:before { content: '\e806'; } /* '' */
+.icon-ok:before { content: '\e807'; } /* '' */
+.icon-ok-1:before { content: '\e808'; } /* '' */
+.icon-check-empty:before { content: '\f096'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
+.icon-ok-squared:before { content: '\f14a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-facebook-official:before { content: '\f230'; } /* '' */
+.icon-snowflake-o:before { content: '\f2dc'; } /* '' */
